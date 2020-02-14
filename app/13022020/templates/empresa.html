@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <title>{{titulo}}</title>
+        <style>
+            .titulo {
+                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
+                color: blue;
+                font-style: italic;
+                text-align: center;
+            }
+
+            .empresas {
+                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
+                color: blue;
+                font-weight: 300;
+                text-shadow: 1px 2px black; 
+                font-size: 21pt;               
+            }
+        </style>
+
+        <script>
+            function voltar() {
+                window.history.back();
+            }
+        </script>
+    </head>
+    <body>
+        <h1 class="titulo" align="center">Empresas</h1>
+        <br />
+        <table border="1" style="border-style: initial;">
+            <thead>
+                <tr>
+                    <th>Empresa</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for e in empresas %}
+                <tr>
+                    <td>{{e}}</td>
+                </tr>    
+                {% endfor %}
+            </tbody>
+        </table>
+        <br />
+    <br>
+    <button onclick="voltar()">Voltar</button>
+</body>
+</html>
