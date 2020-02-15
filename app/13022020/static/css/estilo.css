@@ -1,0 +1,20 @@
+body {
+    background: #db0202;
+    font: #ffffff;
+}
+
+a {
+    text-transform: uppercase;
+    color: #09ff3e;
+}
+
+
+a:hover {
+    text-transform: uppercase;
+    color: #ff00d4;
+    font-size: large;
+}
+
+form {
+    
+}

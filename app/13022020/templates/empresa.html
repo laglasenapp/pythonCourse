@@ -1,6 +1,7 @@
 <html>
     <head>
         <title>{{titulo}}</title>
+        <link rel="stylesheet" href="../static/css/estilo.css">
         <style>
             .titulo {
                 font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
@@ -31,18 +32,22 @@
             <thead>
                 <tr>
                     <th>Empresa</th>
+                    <th>Segmento de TI</th>
                 </tr>
             </thead>
             <tbody>
                 {% for e in empresas %}
-                <tr>
+                <tr>                    
                     <td>{{e}}</td>
+                    <td>{{empresas[e]}}</td>
                 </tr>    
                 {% endfor %}
             </tbody>
         </table>
         <br />
     <br>
+    <a href="/cadastrar_empresa">Cadastrar uma empresa</a> 
+    <br><br>
     <button onclick="voltar()">Voltar</button>
 </body>
 </html>
